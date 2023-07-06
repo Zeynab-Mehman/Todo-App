@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>Todo App</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center my-4">Todo App</h1>
+    <div class="btn-group mb-3" role="group" aria-label="Todo Filters">
+      <button type="button" class="btn btn-primary active" id="all-tasks">All</button>
+      <button type="button" class="btn btn-primary" id="active-tasks">Active</button>
+      <button type="button" class="btn btn-primary" id="completed-tasks">Completed</button>
+    </div>
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <form id="todo-form">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Add a task" id="todo-input">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="submit">Add</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <ul class="list-group my-3" id="todo-list"></ul>
+    <button type="button" class="btn btn-danger mt-3" id="clear-completed">Clear Completed</button>
+  </div>
+
+  <!-- Include Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>
